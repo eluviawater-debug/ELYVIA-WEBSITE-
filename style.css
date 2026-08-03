@@ -374,4 +374,573 @@ h1,h2,h3{
     transform:translateY(-4px);
     box-shadow:0 18px 45px rgba(0,170,255,.55);
 }
+/* ===================================================================
+   ELYVIA PREMIUM CSS V1.0
+   PART 1 - GLOBAL + BACKGROUND + NAVBAR + HERO
+   Paste at the END of style.css
+=================================================================== */
 
+:root{
+
+--primary:#00D9FF;
+--primary-dark:#009DFF;
+--secondary:#7EE8FF;
+--dark:#02111B;
+--dark2:#041A29;
+--dark3:#08263D;
+--white:#ffffff;
+--text:#D8F8FF;
+--glass:rgba(255,255,255,.07);
+--border:rgba(255,255,255,.10);
+
+--shadow:
+0 25px 60px rgba(0,0,0,.45);
+
+--radius:22px;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:#031320;
+color:#fff;
+overflow-x:hidden;
+position:relative;
+
+}
+
+/* ==========================
+PREMIUM BACKGROUND
+========================== */
+
+body::before{
+
+content:'';
+position:fixed;
+left:-15%;
+top:-15%;
+width:700px;
+height:700px;
+
+background:
+radial-gradient(circle,
+rgba(0,217,255,.30),
+transparent 70%);
+
+filter:blur(90px);
+
+animation:
+moveGlow1 14s ease-in-out infinite alternate;
+
+z-index:-5;
+
+}
+
+body::after{
+
+content:'';
+position:fixed;
+right:-10%;
+bottom:-10%;
+width:600px;
+height:600px;
+
+background:
+radial-gradient(circle,
+rgba(0,140,255,.22),
+transparent 70%);
+
+filter:blur(100px);
+
+animation:
+moveGlow2 18s ease-in-out infinite alternate;
+
+z-index:-5;
+
+}
+
+@keyframes moveGlow1{
+
+0%{
+
+transform:
+translate(0,0)
+scale(1);
+
+}
+
+100%{
+
+transform:
+translate(90px,80px)
+scale(1.3);
+
+}
+
+}
+
+@keyframes moveGlow2{
+
+0%{
+
+transform:
+translate(0,0)
+scale(1);
+
+}
+
+100%{
+
+transform:
+translate(-120px,-70px)
+scale(1.4);
+
+}
+
+}
+
+/* Animated Gradient */
+
+body{
+
+background:
+
+linear-gradient(
+135deg,
+#021018 0%,
+#05243D 30%,
+#063E61 65%,
+#03121E 100%);
+
+background-size:300% 300%;
+
+animation:
+GradientMove
+15s ease infinite;
+
+}
+
+@keyframes GradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* ==========================
+CUSTOM SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#03141E;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(
+180deg,
+#00D8FF,
+#007AFF);
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#00E4FF;
+
+}
+
+/* ==========================
+SECTIONS
+========================== */
+
+section{
+
+position:relative;
+
+padding:110px 8%;
+
+z-index:2;
+
+}
+
+/* ==========================
+GLASS CARD
+========================== */
+
+.glass{
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(22px);
+
+-webkit-backdrop-filter:blur(22px);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:22px;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.35);
+
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+header{
+
+position:fixed;
+
+top:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:92%;
+
+max-width:1400px;
+
+padding:18px 35px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:100px;
+
+z-index:9999;
+
+transition:.4s;
+
+}
+
+header:hover{
+
+background:rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+font-size:32px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:#fff;
+
+text-decoration:none;
+
+text-transform:uppercase;
+
+}
+
+.logo span{
+
+color:#00D8FF;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:500;
+
+font-size:16px;
+
+transition:.35s;
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:'';
+
+position:absolute;
+
+bottom:-8px;
+
+left:0;
+
+width:0;
+
+height:2px;
+
+background:#00D8FF;
+
+transition:.35s;
+
+}
+
+nav a:hover{
+
+color:#00D8FF;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:60px;
+
+}
+
+.hero-content{
+
+max-width:650px;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+line-height:1.1;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+text-shadow:
+
+0 0 40px rgba(0,217,255,.35);
+
+}
+
+.hero h1 span{
+
+background:
+
+linear-gradient(
+90deg,
+#ffffff,
+#7EE8FF,
+#00D8FF);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#CBEAF4;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+/* Premium Button */
+
+.btn{
+
+padding:18px 38px;
+
+border-radius:100px;
+
+text-decoration:none;
+
+font-weight:700;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+transition:.4s;
+
+}
+
+.btn-primary{
+
+background:
+
+linear-gradient(
+135deg,
+#00D8FF,
+#008DFF);
+
+color:#fff;
+
+box-shadow:
+
+0 18px 45px rgba(0,162,255,.35);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 30px 60px rgba(0,162,255,.55);
+
+}
+
+.btn-outline{
+
+border:2px solid #00D8FF;
+
+color:#fff;
+
+}
+
+.btn-outline:hover{
+
+background:#00D8FF;
+
+color:#00131D;
+
+}
+
+/* Hero Image */
+
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+max-width:420px;
+
+filter:
+
+drop-shadow(0 35px 60px rgba(0,180,255,.45));
+
+animation:
+
+BottleFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes BottleFloat{
+
+0%{
+
+transform:
+translateY(0);
+
+}
+
+50%{
+
+transform:
+translateY(-20px);
+
+}
+
+100%{
+
+transform:
+translateY(0);
+
+}
+
+}
+
+/* ==========================================================
+END OF PART 1
+PART 2 = Premium Product Cards + Buttons + Hover Effects
+========================================================== */
