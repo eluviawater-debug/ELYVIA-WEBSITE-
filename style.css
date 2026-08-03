@@ -1,3 +1,16 @@
+body{
+    background:#050505;
+    color:white;
+}
+
+header{
+    background:#111;
+    padding:30px;
+}
+
+h1{
+    color:#d4af37;
+}
 *{
     margin:0;
     padding:0;
