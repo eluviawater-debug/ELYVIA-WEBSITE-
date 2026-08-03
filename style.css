@@ -239,3 +239,33 @@ background:#f5fbff;
 border-radius:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
+.brand{
+    background:#0066b3;
+    color:white;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.brand h2{
+    color:white;
+    font-size:45px;
+}
+
+.brand p{
+    color:white;
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+}
+
+
+.quality{
+    background:#f7fbff;
+}
+
+
+.features h3{
+    color:#0066b3;
+    font-size:22px;
+    margin-bottom:15px;
+}
