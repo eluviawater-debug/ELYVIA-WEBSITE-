@@ -5,9 +5,9 @@
 }
 
 body{
-    font-family:'Segoe UI',Arial,sans-serif;
-    background:#0b0b0b;
-    color:#fff;
+    font-family:'Segoe UI',sans-serif;
+    background:#ffffff;
+    color:#111;
 }
 
 
@@ -17,96 +17,91 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:30px 8%;
-    background:rgba(0,0,0,0.8);
+    padding:25px 7%;
+    background:white;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
 }
 
 .logo h1{
-    font-size:52px;
-    letter-spacing:10px;
-    color:#e7c873;
-    font-weight:700;
+    font-size:45px;
+    letter-spacing:8px;
+    color:#0b3d5c;
 }
 
-.logo p{
-    color:#aaa;
-    letter-spacing:2px;
+.logo span{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#777;
 }
 
 
 nav a{
-    color:#fff;
     text-decoration:none;
-    margin-left:30px;
-    font-size:16px;
+    color:#222;
+    margin-left:25px;
+    font-weight:500;
 }
 
-nav a:hover{
-    color:#e7c873;
-}
 
 
 /* HERO */
 
 .hero{
-    min-height:90vh;
+    min-height:85vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:80px 8%;
+    padding:70px 7%;
     background:
-    radial-gradient(circle at 80% 50%,#264653,transparent 35%),
-    #050505;
+    linear-gradient(120deg,#ffffff,#eaf6ff);
+}
+
+
+.left{
+    max-width:550px;
 }
 
 
 .left h1{
-    font-size:75px;
+    font-size:70px;
     line-height:1;
-    letter-spacing:3px;
+    color:#082c44;
 }
 
 
 .left p{
     margin:30px 0;
-    font-size:24px;
-    color:#cfcfcf;
+    font-size:22px;
+    color:#555;
+}
+
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 
 .btn{
-    display:inline-block;
-    padding:16px 40px;
+    padding:15px 28px;
     border-radius:50px;
-    background:#e7c873;
-    color:#000;
+    background:#082c44;
+    color:white;
     text-decoration:none;
-    font-weight:700;
-    margin-right:15px;
+    font-weight:600;
 }
 
 
 .whatsapp{
-    background:#1fbf63;
-    color:#fff;
+    background:#25D366;
 }
 
 
-/* BOTTLE */
 
 .right img{
-    width:420px;
-    animation:float 3s infinite ease-in-out;
-    filter:drop-shadow(0 20px 40px rgba(231,200,115,.5));
-}
-
-
-@keyframes float{
-
-50%{
-transform:translateY(-15px);
-}
-
+    width:380px;
+    filter:drop-shadow(0 20px 30px #999);
 }
 
 
@@ -114,50 +109,49 @@ transform:translateY(-15px);
 /* SECTIONS */
 
 section{
-    padding:90px 8%;
+    padding:80px 7%;
     text-align:center;
 }
 
 
 section h2{
-    font-size:45px;
-    color:#e7c873;
-    margin-bottom:30px;
+    font-size:42px;
+    color:#082c44;
+    margin-bottom:25px;
 }
 
 
 section p{
-    max-width:850px;
+    max-width:800px;
     margin:auto;
-    color:#bbb;
-    font-size:18px;
+    color:#555;
     line-height:1.8;
 }
+
 
 
 /* PRODUCTS */
 
 .card{
     display:inline-block;
-    width:250px;
+    width:230px;
+    margin:20px;
     padding:45px 20px;
-    margin:25px;
-    background:linear-gradient(145deg,#161616,#090909);
-    border:1px solid #333;
-    border-radius:25px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
     font-size:24px;
-    color:#e7c873;
-    box-shadow:0 20px 40px rgba(0,0,0,.5);
+    font-weight:bold;
+    color:#082c44;
 }
 
 
-/* FOOTER */
 
 footer{
-    background:#000;
-    padding:30px;
+    background:#082c44;
+    color:white;
     text-align:center;
-    color:#777;
+    padding:25px;
 }
 
 
@@ -182,7 +176,7 @@ nav{
 }
 
 .right img{
-    width:280px;
+    width:260px;
     margin-top:40px;
 }
 
