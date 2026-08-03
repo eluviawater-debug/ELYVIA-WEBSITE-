@@ -192,9 +192,19 @@ nav{
     font-size:45px;
 }
 
+.right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 .right img{
-    width:260px;
-    margin-top:40px;
+    width:330px;
+    max-height:600px;
+    object-fit:contain;
+    filter:drop-shadow(0 25px 40px rgba(0,0,0,0.25));
+}
 }
 
 }
@@ -282,19 +292,3 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
 }
 
-
-.bottle-box img{
-    width:350px;
-    display:block;
-}
-.right{
-    width:45%;
-    display:flex;
-    justify-content:center;
-}
-
-.right img{
-    width:420px;
-    max-width:100%;
-    filter:drop-shadow(0 25px 40px rgba(0,0,0,0.25));
-}
