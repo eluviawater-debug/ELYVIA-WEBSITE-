@@ -5,9 +5,9 @@
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
-    background:#ffffff;
-    color:#111;
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:#fff;
+    color:#222;
 }
 
 
@@ -17,29 +17,37 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:25px 7%;
+    padding:20px 7%;
     background:white;
-    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    box-shadow:0 3px 15px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
 .logo h1{
     font-size:45px;
-    letter-spacing:8px;
-    color:#0b3d5c;
+    letter-spacing:5px;
+    color:#0066b3;
+    font-weight:800;
 }
 
 .logo span{
-    font-size:12px;
-    letter-spacing:3px;
     color:#777;
+    font-size:12px;
+    letter-spacing:2px;
 }
 
 
 nav a{
     text-decoration:none;
-    color:#222;
+    color:#333;
     margin-left:25px;
-    font-weight:500;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#0066b3;
 }
 
 
@@ -51,26 +59,25 @@ nav a{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:70px 7%;
-    background:
-    linear-gradient(120deg,#ffffff,#eaf6ff);
+    padding:60px 7%;
+    background:linear-gradient(120deg,#eaf8ff,#ffffff);
 }
 
 
 .left{
-    max-width:550px;
+    max-width:600px;
 }
 
 
 .left h1{
-    font-size:70px;
-    line-height:1;
-    color:#082c44;
+    font-size:65px;
+    color:#00529b;
+    line-height:1.1;
 }
 
 
 .left p{
-    margin:30px 0;
+    margin:25px 0;
     font-size:22px;
     color:#555;
 }
@@ -78,53 +85,54 @@ nav a{
 
 .buttons{
     display:flex;
-    flex-wrap:wrap;
     gap:15px;
+    flex-wrap:wrap;
 }
 
 
 .btn{
-    padding:15px 28px;
-    border-radius:50px;
-    background:#082c44;
+    padding:14px 30px;
+    background:#0066b3;
     color:white;
     text-decoration:none;
-    font-weight:600;
+    border-radius:30px;
+    font-weight:bold;
 }
 
 
 .whatsapp{
-    background:#25D366;
+    background:#1ca84b;
 }
 
 
 
 .right img{
     width:380px;
-    filter:drop-shadow(0 20px 30px #999);
+    filter:drop-shadow(0 15px 25px #aaa);
 }
 
 
 
-/* SECTIONS */
+/* ABOUT */
 
 section{
-    padding:80px 7%;
+    padding:70px 7%;
     text-align:center;
 }
 
 
 section h2{
-    font-size:42px;
-    color:#082c44;
+    font-size:40px;
+    color:#0066b3;
     margin-bottom:25px;
 }
 
 
 section p{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
     color:#555;
+    font-size:18px;
     line-height:1.8;
 }
 
@@ -134,24 +142,33 @@ section p{
 
 .card{
     display:inline-block;
-    width:230px;
+    width:240px;
     margin:20px;
     padding:45px 20px;
-    border-radius:20px;
     background:white;
-    box-shadow:0 15px 35px rgba(0,0,0,.1);
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    color:#0066b3;
     font-size:24px;
-    font-weight:bold;
-    color:#082c44;
+    font-weight:700;
+    border-bottom:5px solid #ffd200;
+}
+
+
+.card:hover{
+    transform:translateY(-10px);
+    transition:.3s;
 }
 
 
 
+/* FOOTER */
+
 footer{
-    background:#082c44;
+    background:#0066b3;
     color:white;
+    padding:30px;
     text-align:center;
-    padding:25px;
 }
 
 
@@ -163,7 +180,7 @@ header{
 }
 
 nav{
-    margin-top:20px;
+    margin-top:15px;
 }
 
 .hero{
