@@ -290,5 +290,88 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
     padding:30px;
     border-radius:30px;
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}/* ===== PREMIUM BACKGROUND ===== */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:
+        radial-gradient(circle at top left,#38bdf8 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#0ea5e9 0%,transparent 35%),
+        linear-gradient(135deg,#02111f 0%,#051d33 40%,#082b45 100%);
+    background-attachment:fixed;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Floating Glow */
+body::before{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    top:-250px;
+    right:-150px;
+    background:rgba(0,183,255,.18);
+    filter:blur(130px);
+    border-radius:50%;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    bottom:-150px;
+    left:-100px;
+    background:rgba(255,255,255,.06);
+    filter:blur(120px);
+    border-radius:50%;
+    z-index:-2;
+}
+
+/* Glass Sections */
+
+section{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    margin:40px auto;
+    padding:60px;
+    width:90%;
+    max-width:1300px;
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* Premium Heading */
+
+h1,h2,h3{
+    color:#ffffff;
+    text-shadow:0 0 25px rgba(0,183,255,.35);
+}
+
+/* Premium Button */
+
+.btn{
+    display:inline-block;
+    padding:14px 34px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#00d4ff,#0099ff);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.35s;
+    box-shadow:0 10px 35px rgba(0,170,255,.4);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 45px rgba(0,170,255,.55);
 }
 
